@@ -13,3 +13,5 @@ You can change the photo expansion probability by changing `doubleCellProbabilit
 Clicking the photo thumbnail will allow you to see the large image with some photo detail in fullscreen.
 Single click on the image will show/hide the detail and navigation bar.
 Double click on the image will change image to AspectFit/AspectFill mode.
+
+[Kingfisher](https://github.com/onevcat/Kingfisher) is used for download and cache images in this App.
