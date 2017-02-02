@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26E7D0191E42E69300AE1E2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E7D0181E42E69300AE1E2F /* AppDelegate.swift */; };
+		26E7D01E1E42E69300AE1E2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E7D01C1E42E69300AE1E2F /* Main.storyboard */; };
+		26E7D0201E42E69300AE1E2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26E7D01F1E42E69300AE1E2F /* Assets.xcassets */; };
+		26E7D0231E42E69300AE1E2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E7D0211E42E69300AE1E2F /* LaunchScreen.storyboard */; };
+		26E7D02E1E42E69300AE1E2F /* PhotoWall_500px_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E7D02D1E42E69300AE1E2F /* PhotoWall_500px_challengeTests.swift */; };
+		26E7D0391E42E69300AE1E2F /* PhotoWall_500px_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E7D0381E42E69300AE1E2F /* PhotoWall_500px_challengeUITests.swift */; };
+		26E7D0471E42E6E900AE1E2F /* PhotoWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E7D0461E42E6E900AE1E2F /* PhotoWallViewController.swift */; };
+		26E7D0541E42E75B00AE1E2F /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E7D04A1E42E75B00AE1E2F /* Errors.swift */; };
+		26E7D0551E42E75B00AE1E2F /* ParsingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E7D04B1E42E75B00AE1E2F /* ParsingConstants.swift */; };
+		26E7D0561E42E75B00AE1E2F /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E7D04C1E42E75B00AE1E2F /* Photo.swift */; };
+		26E7D0571E42E75B00AE1E2F /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E7D04D1E42E75B00AE1E2F /* PhotoDetailViewController.swift */; };
+		26E7D0591E42E75B00AE1E2F /* PhotoThumbnailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E7D04F1E42E75B00AE1E2F /* PhotoThumbnailCollectionViewCell.swift */; };
+		26E7D05A1E42E75B00AE1E2F /* PhotoWallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E7D0501E42E75B00AE1E2F /* PhotoWallLayout.swift */; };
+		26E7D05B1E42E75B00AE1E2F /* QueryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E7D0511E42E75B00AE1E2F /* QueryModel.swift */; };
+		26E7D0651E42EDFB00AE1E2F /* PXAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E7D0641E42EDFB00AE1E2F /* PXAPI.framework */; };
+		26E7D0661E42EDFB00AE1E2F /* PXAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26E7D0641E42EDFB00AE1E2F /* PXAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		85D2571A75FD853B170232C4 /* Pods_PhotoWall_500px_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2026ADEB8AEE00F422EFDF60 /* Pods_PhotoWall_500px_challenge.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26E7D02A1E42E69300AE1E2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26E7D00D1E42E69300AE1E2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26E7D0141E42E69300AE1E2F;
+			remoteInfo = PhotoWall_500px_challenge;
+		};
+		26E7D0351E42E69300AE1E2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26E7D00D1E42E69300AE1E2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26E7D0141E42E69300AE1E2F;
+			remoteInfo = PhotoWall_500px_challenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		26E7D0671E42EDFC00AE1E2F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				26E7D0661E42EDFB00AE1E2F /* PXAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0F5E036535BA97DBBB7F55F5 /* Pods-PhotoWall_500px_challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoWall_500px_challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoWall_500px_challenge/Pods-PhotoWall_500px_challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		2026ADEB8AEE00F422EFDF60 /* Pods_PhotoWall_500px_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoWall_500px_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26E7D0151E42E69300AE1E2F /* PhotoWall_500px_challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoWall_500px_challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26E7D0181E42E69300AE1E2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		26E7D01D1E42E69300AE1E2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		26E7D01F1E42E69300AE1E2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26E7D0221E42E69300AE1E2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		26E7D0241E42E69300AE1E2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26E7D0291E42E69300AE1E2F /* PhotoWall_500px_challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoWall_500px_challengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26E7D02D1E42E69300AE1E2F /* PhotoWall_500px_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWall_500px_challengeTests.swift; sourceTree = "<group>"; };
+		26E7D02F1E42E69300AE1E2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26E7D0341E42E69300AE1E2F /* PhotoWall_500px_challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoWall_500px_challengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26E7D0381E42E69300AE1E2F /* PhotoWall_500px_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWall_500px_challengeUITests.swift; sourceTree = "<group>"; };
+		26E7D03A1E42E69300AE1E2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26E7D0461E42E6E900AE1E2F /* PhotoWallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoWallViewController.swift; sourceTree = "<group>"; };
+		26E7D04A1E42E75B00AE1E2F /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		26E7D04B1E42E75B00AE1E2F /* ParsingConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsingConstants.swift; sourceTree = "<group>"; };
+		26E7D04C1E42E75B00AE1E2F /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		26E7D04D1E42E75B00AE1E2F /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
+		26E7D04F1E42E75B00AE1E2F /* PhotoThumbnailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoThumbnailCollectionViewCell.swift; sourceTree = "<group>"; };
+		26E7D0501E42E75B00AE1E2F /* PhotoWallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoWallLayout.swift; sourceTree = "<group>"; };
+		26E7D0511E42E75B00AE1E2F /* QueryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryModel.swift; sourceTree = "<group>"; };
+		26E7D0641E42EDFB00AE1E2F /* PXAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PXAPI.framework; sourceTree = "<group>"; };
+		D345BA29C94EB5E7D49D8224 /* Pods-PhotoWall_500px_challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoWall_500px_challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoWall_500px_challenge/Pods-PhotoWall_500px_challenge.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26E7D0121E42E69300AE1E2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85D2571A75FD853B170232C4 /* Pods_PhotoWall_500px_challenge.framework in Frameworks */,
+				26E7D0651E42EDFB00AE1E2F /* PXAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26E7D0261E42E69300AE1E2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26E7D0311E42E69300AE1E2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26E7D00C1E42E69300AE1E2F = {
+			isa = PBXGroup;
+			children = (
+				26E7D0171E42E69300AE1E2F /* PhotoWall_500px_challenge */,
+				26E7D0631E42E84200AE1E2F /* Frameworks */,
+				26E7D02C1E42E69300AE1E2F /* PhotoWall_500px_challengeTests */,
+				26E7D0371E42E69300AE1E2F /* PhotoWall_500px_challengeUITests */,
+				26E7D0161E42E69300AE1E2F /* Products */,
+				802358DCB1B10E9F37CCC8E8 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		26E7D0161E42E69300AE1E2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26E7D0151E42E69300AE1E2F /* PhotoWall_500px_challenge.app */,
+				26E7D0291E42E69300AE1E2F /* PhotoWall_500px_challengeTests.xctest */,
+				26E7D0341E42E69300AE1E2F /* PhotoWall_500px_challengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26E7D0171E42E69300AE1E2F /* PhotoWall_500px_challenge */ = {
+			isa = PBXGroup;
+			children = (
+				26E7D0181E42E69300AE1E2F /* AppDelegate.swift */,
+				26E7D05E1E42E7AF00AE1E2F /* ErrorAndConstants */,
+				26E7D05D1E42E7A600AE1E2F /* Models */,
+				26E7D05C1E42E79500AE1E2F /* Controllers */,
+				26E7D05F1E42E7C300AE1E2F /* Views */,
+				26E7D0601E42E80400AE1E2F /* Storyboards */,
+				26E7D01F1E42E69300AE1E2F /* Assets.xcassets */,
+				26E7D0241E42E69300AE1E2F /* Info.plist */,
+			);
+			path = PhotoWall_500px_challenge;
+			sourceTree = "<group>";
+		};
+		26E7D02C1E42E69300AE1E2F /* PhotoWall_500px_challengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				26E7D02D1E42E69300AE1E2F /* PhotoWall_500px_challengeTests.swift */,
+				26E7D02F1E42E69300AE1E2F /* Info.plist */,
+			);
+			path = PhotoWall_500px_challengeTests;
+			sourceTree = "<group>";
+		};
+		26E7D0371E42E69300AE1E2F /* PhotoWall_500px_challengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				26E7D0381E42E69300AE1E2F /* PhotoWall_500px_challengeUITests.swift */,
+				26E7D03A1E42E69300AE1E2F /* Info.plist */,
+			);
+			path = PhotoWall_500px_challengeUITests;
+			sourceTree = "<group>";
+		};
+		26E7D05C1E42E79500AE1E2F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				26E7D04D1E42E75B00AE1E2F /* PhotoDetailViewController.swift */,
+				26E7D0461E42E6E900AE1E2F /* PhotoWallViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		26E7D05D1E42E7A600AE1E2F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				26E7D04C1E42E75B00AE1E2F /* Photo.swift */,
+				26E7D0511E42E75B00AE1E2F /* QueryModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		26E7D05E1E42E7AF00AE1E2F /* ErrorAndConstants */ = {
+			isa = PBXGroup;
+			children = (
+				26E7D04A1E42E75B00AE1E2F /* Errors.swift */,
+				26E7D04B1E42E75B00AE1E2F /* ParsingConstants.swift */,
+			);
+			name = ErrorAndConstants;
+			sourceTree = "<group>";
+		};
+		26E7D05F1E42E7C300AE1E2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				26E7D04F1E42E75B00AE1E2F /* PhotoThumbnailCollectionViewCell.swift */,
+				26E7D0501E42E75B00AE1E2F /* PhotoWallLayout.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		26E7D0601E42E80400AE1E2F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				26E7D01C1E42E69300AE1E2F /* Main.storyboard */,
+				26E7D0211E42E69300AE1E2F /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		26E7D0631E42E84200AE1E2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26E7D0641E42EDFB00AE1E2F /* PXAPI.framework */,
+				2026ADEB8AEE00F422EFDF60 /* Pods_PhotoWall_500px_challenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		802358DCB1B10E9F37CCC8E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F5E036535BA97DBBB7F55F5 /* Pods-PhotoWall_500px_challenge.debug.xcconfig */,
+				D345BA29C94EB5E7D49D8224 /* Pods-PhotoWall_500px_challenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26E7D0141E42E69300AE1E2F /* PhotoWall_500px_challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26E7D03D1E42E69300AE1E2F /* Build configuration list for PBXNativeTarget "PhotoWall_500px_challenge" */;
+			buildPhases = (
+				01567DC00B62EF2DFFC2322B /* [CP] Check Pods Manifest.lock */,
+				26E7D0111E42E69300AE1E2F /* Sources */,
+				26E7D0121E42E69300AE1E2F /* Frameworks */,
+				26E7D0131E42E69300AE1E2F /* Resources */,
+				75FE53459FC54338F37EB575 /* [CP] Embed Pods Frameworks */,
+				7DB758989A2747CDAE12794B /* [CP] Copy Pods Resources */,
+				26E7D0671E42EDFC00AE1E2F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoWall_500px_challenge;
+			productName = PhotoWall_500px_challenge;
+			productReference = 26E7D0151E42E69300AE1E2F /* PhotoWall_500px_challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26E7D0281E42E69300AE1E2F /* PhotoWall_500px_challengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26E7D0401E42E69300AE1E2F /* Build configuration list for PBXNativeTarget "PhotoWall_500px_challengeTests" */;
+			buildPhases = (
+				26E7D0251E42E69300AE1E2F /* Sources */,
+				26E7D0261E42E69300AE1E2F /* Frameworks */,
+				26E7D0271E42E69300AE1E2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26E7D02B1E42E69300AE1E2F /* PBXTargetDependency */,
+			);
+			name = PhotoWall_500px_challengeTests;
+			productName = PhotoWall_500px_challengeTests;
+			productReference = 26E7D0291E42E69300AE1E2F /* PhotoWall_500px_challengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		26E7D0331E42E69300AE1E2F /* PhotoWall_500px_challengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26E7D0431E42E69300AE1E2F /* Build configuration list for PBXNativeTarget "PhotoWall_500px_challengeUITests" */;
+			buildPhases = (
+				26E7D0301E42E69300AE1E2F /* Sources */,
+				26E7D0311E42E69300AE1E2F /* Frameworks */,
+				26E7D0321E42E69300AE1E2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26E7D0361E42E69300AE1E2F /* PBXTargetDependency */,
+			);
+			name = PhotoWall_500px_challengeUITests;
+			productName = PhotoWall_500px_challengeUITests;
+			productReference = 26E7D0341E42E69300AE1E2F /* PhotoWall_500px_challengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26E7D00D1E42E69300AE1E2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = JianxiongWang;
+				TargetAttributes = {
+					26E7D0141E42E69300AE1E2F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = G6J7L4ZHA8;
+						ProvisioningStyle = Automatic;
+					};
+					26E7D0281E42E69300AE1E2F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = G6J7L4ZHA8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 26E7D0141E42E69300AE1E2F;
+					};
+					26E7D0331E42E69300AE1E2F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = G6J7L4ZHA8;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 26E7D0141E42E69300AE1E2F;
+					};
+				};
+			};
+			buildConfigurationList = 26E7D0101E42E69300AE1E2F /* Build configuration list for PBXProject "PhotoWall_500px_challenge" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26E7D00C1E42E69300AE1E2F;
+			productRefGroup = 26E7D0161E42E69300AE1E2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26E7D0141E42E69300AE1E2F /* PhotoWall_500px_challenge */,
+				26E7D0281E42E69300AE1E2F /* PhotoWall_500px_challengeTests */,
+				26E7D0331E42E69300AE1E2F /* PhotoWall_500px_challengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26E7D0131E42E69300AE1E2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26E7D0231E42E69300AE1E2F /* LaunchScreen.storyboard in Resources */,
+				26E7D0201E42E69300AE1E2F /* Assets.xcassets in Resources */,
+				26E7D01E1E42E69300AE1E2F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26E7D0271E42E69300AE1E2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26E7D0321E42E69300AE1E2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01567DC00B62EF2DFFC2322B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		75FE53459FC54338F37EB575 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoWall_500px_challenge/Pods-PhotoWall_500px_challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DB758989A2747CDAE12794B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoWall_500px_challenge/Pods-PhotoWall_500px_challenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26E7D0111E42E69300AE1E2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26E7D0591E42E75B00AE1E2F /* PhotoThumbnailCollectionViewCell.swift in Sources */,
+				26E7D0561E42E75B00AE1E2F /* Photo.swift in Sources */,
+				26E7D0191E42E69300AE1E2F /* AppDelegate.swift in Sources */,
+				26E7D0541E42E75B00AE1E2F /* Errors.swift in Sources */,
+				26E7D05A1E42E75B00AE1E2F /* PhotoWallLayout.swift in Sources */,
+				26E7D05B1E42E75B00AE1E2F /* QueryModel.swift in Sources */,
+				26E7D0551E42E75B00AE1E2F /* ParsingConstants.swift in Sources */,
+				26E7D0471E42E6E900AE1E2F /* PhotoWallViewController.swift in Sources */,
+				26E7D0571E42E75B00AE1E2F /* PhotoDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26E7D0251E42E69300AE1E2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26E7D02E1E42E69300AE1E2F /* PhotoWall_500px_challengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26E7D0301E42E69300AE1E2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26E7D0391E42E69300AE1E2F /* PhotoWall_500px_challengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26E7D02B1E42E69300AE1E2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26E7D0141E42E69300AE1E2F /* PhotoWall_500px_challenge */;
+			targetProxy = 26E7D02A1E42E69300AE1E2F /* PBXContainerItemProxy */;
+		};
+		26E7D0361E42E69300AE1E2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26E7D0141E42E69300AE1E2F /* PhotoWall_500px_challenge */;
+			targetProxy = 26E7D0351E42E69300AE1E2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		26E7D01C1E42E69300AE1E2F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26E7D01D1E42E69300AE1E2F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		26E7D0211E42E69300AE1E2F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26E7D0221E42E69300AE1E2F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26E7D03B1E42E69300AE1E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		26E7D03C1E42E69300AE1E2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26E7D03E1E42E69300AE1E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F5E036535BA97DBBB7F55F5 /* Pods-PhotoWall_500px_challenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G6J7L4ZHA8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PhotoWall_500px_challenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JianxiongWang.PhotoWall-500px-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		26E7D03F1E42E69300AE1E2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D345BA29C94EB5E7D49D8224 /* Pods-PhotoWall_500px_challenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = G6J7L4ZHA8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PhotoWall_500px_challenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JianxiongWang.PhotoWall-500px-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		26E7D0411E42E69300AE1E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = G6J7L4ZHA8;
+				INFOPLIST_FILE = PhotoWall_500px_challengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JianxiongWang.PhotoWall-500px-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoWall_500px_challenge.app/PhotoWall_500px_challenge";
+			};
+			name = Debug;
+		};
+		26E7D0421E42E69300AE1E2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = G6J7L4ZHA8;
+				INFOPLIST_FILE = PhotoWall_500px_challengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JianxiongWang.PhotoWall-500px-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoWall_500px_challenge.app/PhotoWall_500px_challenge";
+			};
+			name = Release;
+		};
+		26E7D0441E42E69300AE1E2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = G6J7L4ZHA8;
+				INFOPLIST_FILE = PhotoWall_500px_challengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JianxiongWang.PhotoWall-500px-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PhotoWall_500px_challenge;
+			};
+			name = Debug;
+		};
+		26E7D0451E42E69300AE1E2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = G6J7L4ZHA8;
+				INFOPLIST_FILE = PhotoWall_500px_challengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JianxiongWang.PhotoWall-500px-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PhotoWall_500px_challenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26E7D0101E42E69300AE1E2F /* Build configuration list for PBXProject "PhotoWall_500px_challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26E7D03B1E42E69300AE1E2F /* Debug */,
+				26E7D03C1E42E69300AE1E2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26E7D03D1E42E69300AE1E2F /* Build configuration list for PBXNativeTarget "PhotoWall_500px_challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26E7D03E1E42E69300AE1E2F /* Debug */,
+				26E7D03F1E42E69300AE1E2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26E7D0401E42E69300AE1E2F /* Build configuration list for PBXNativeTarget "PhotoWall_500px_challengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26E7D0411E42E69300AE1E2F /* Debug */,
+				26E7D0421E42E69300AE1E2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26E7D0431E42E69300AE1E2F /* Build configuration list for PBXNativeTarget "PhotoWall_500px_challengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26E7D0441E42E69300AE1E2F /* Debug */,
+				26E7D0451E42E69300AE1E2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26E7D00D1E42E69300AE1E2F /* Project object */;
+}

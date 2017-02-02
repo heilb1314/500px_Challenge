@@ -1,0 +1,6 @@
+framework module Pods_PhotoWall_500px_challenge {
+  umbrella header "Pods-PhotoWall_500px_challenge-umbrella.h"
+
+  export *
+  module * { export * }
+}
