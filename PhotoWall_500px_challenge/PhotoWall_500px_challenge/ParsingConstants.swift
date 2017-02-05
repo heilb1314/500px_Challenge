@@ -9,7 +9,7 @@
 import Foundation
 
 /// Query fields
-public class QueryFields {
+public struct QueryFields {
     static let totalItems = "total_items"
     static let photos = "photos"
     static let currentPage = "current_page"
@@ -18,7 +18,7 @@ public class QueryFields {
 
 
 /// Photo fields in `QueryFields.photos`
-public class PhotoFields {
+public struct PhotoFields {
     static let aperture = "aperture"
     static let category = "category"
     static let collectionsCount = "collections_count"
@@ -50,14 +50,14 @@ public class PhotoFields {
 }
 
 /// Images fields in `PhotoFields.images`
-public class ImagesFields {
+public struct ImagesFields {
     static let format = "format"
     static let httpsUrl = "https_url"
     static let size = "size"
     static let url = "url"
 }
 
-public class UserFields {
+public struct UserFields {
     static let city = "city"
     static let country = "country"
     static let firstname = "firstname"
