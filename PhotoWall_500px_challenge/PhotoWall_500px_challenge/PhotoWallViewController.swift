@@ -151,6 +151,13 @@ extension PhotoWallViewController: PhotoWallLayoutDelegate {
         return photos[indexPath.item].getPhotoSize()
     }
     
+    // Update grids when device rotates
+    override func viewWillLayoutSubviews() {
+        if self.isLandscape != UIInterfaceOrientationIsLandscape(UIApplication.shared.statusBarOrientation) {
+            updateCollectionViewLayout()
+        }
+    }
+    
     override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
         updateCollectionViewLayout()
     }
