@@ -18,7 +18,7 @@ class PhotoWallViewController: UIViewController, UICollectionViewDelegate, UICol
     fileprivate var gridSizes: [CGSize]!
     fileprivate var itemsPerRow: Int = 3
     fileprivate var lastViewdIndexPath: IndexPath?
-    
+    fileprivate var isLandscape = false
     
     private var searchTerm: String = "popular"
     private var page: Int = 1
@@ -26,7 +26,6 @@ class PhotoWallViewController: UIViewController, UICollectionViewDelegate, UICol
     private var photoSizes: PXPhotoModelSize = [.thumbnail, .large]
     private var selectedIndex: Int?
     private var isLoading = false
-    private var isLandscape = false
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
