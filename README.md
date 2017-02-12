@@ -15,3 +15,7 @@ Single click on the image will show/hide the detail and navigation bar.
 Double click on the image will change image to AspectFit/AspectFill mode.
 
 [Kingfisher](https://github.com/onevcat/Kingfisher) is used for download and cache images in this App.
+
+![demo portrait](https://github.com/heilb1314/500px_Challenge/raw/master/demo_portrait.gif)
+
+![demo landscape](https://github.com/heilb1314/500px_Challenge/raw/master/demo_landscape.gif)
