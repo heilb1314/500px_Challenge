@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import PXAPI
 
 /**
  * Photo Object with photo attributes and images information, Images cannot be nil
@@ -110,7 +109,7 @@ public class Photo {
 public class ImageObject {
     var url:String
     var format: String
-    var size: PXPhotoModelSize
+    var size: Int
     
     init(imageDictionary dic: [String:Any]) throws {
         guard let url = dic[ImagesFields.url] as? String else { throw ImageObjectError.noUrlFound }
@@ -118,6 +117,6 @@ public class ImageObject {
         guard let size = dic[ImagesFields.size] as? Int else { throw ImageObjectError.noSizeFound }
         self.url = url
         self.format = format
-        self.size = PXPhotoModelSize(rawValue: UInt(size))
+        self.size = size
     }
 }

@@ -68,3 +68,37 @@ public struct UserFields {
     static let userpicUrl = "userpic_url"
 }
 
+
+let CATEGORIES = [
+    "Popular",
+    "Upcoming",
+    "Uncategorized",
+    "Abstract",
+    "Animals",
+    "Black and White",
+    "Celebrities",
+    "City and Architecture",
+    "Commercial",
+    "Concert",
+    "Family",
+    "Fashion",
+    "Film",
+    "Fine Art",
+    "Food",
+    "Journalism",
+    "Landscapes",
+    "Macro",
+    "Nature",
+    "Nude",
+    "People",
+    "Performing Arts",
+    "Sport",
+    "Still Life",
+    "Street",
+    "Transportation",
+    "Travel",
+    "Underwater",
+    "Urban Exploration",
+    "Wedding"
+]
+

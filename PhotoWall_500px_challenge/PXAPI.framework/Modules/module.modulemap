@@ -1,6 +1,0 @@
-framework module PXAPI {
-  umbrella header "PXAPI.h"
-
-  export *
-  module * { export * }
-}

@@ -48,6 +48,7 @@ class PhotoWallLayout: UICollectionViewLayout {
     }
     
     override func prepare() {
+        self.itemAttributes.removeAll()
         setColumnWidth()
         guard let itemCounts = self.collectionView?.numberOfItems(inSection: 0) else { return }
         layoutVertical = !UIInterfaceOrientationIsLandscape(UIApplication.shared.statusBarOrientation)

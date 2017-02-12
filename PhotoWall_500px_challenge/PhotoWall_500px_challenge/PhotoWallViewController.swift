@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import PXAPI
 
 class PhotoWallViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -19,20 +18,30 @@ class PhotoWallViewController: UIViewController, UICollectionViewDelegate, UICol
     fileprivate var itemsPerRow: Int = 3
     fileprivate var lastViewdIndexPath: IndexPath?
     fileprivate var isLandscape = false
+    fileprivate var isLoading = false
+    fileprivate var searchController: UISearchController!
+    fileprivate var searchTerm: String = CATEGORIES[0]
+    fileprivate var page: Int = 1
     
-    private var searchTerm: String = "popular"
-    private var page: Int = 1
+    
     private var pageSize: Int = 30
-    private var photoSizes: PXPhotoModelSize = [.thumbnail, .large]
+    private var photoSizes: [Int] = [3,4]
     private var selectedIndex: Int?
-    private var isLoading = false
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.barStyle = .default
         self.navigationController?.navigationBar.titleTextAttributes = nil
-        self.navigationItem.title = "Popular"
+        let rightBarItem = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(changeTerm(sender:)))
+        rightBarItem.tintColor = UIColor.orange
+        self.navigationItem.rightBarButtonItem = rightBarItem
+        self.navigationItem.title = searchTerm.capitalized
         self.updateCollectionViewLayout()
+    }
+    
+    func changeTerm(sender: UIBarButtonItem) {
+        self.performSegue(withIdentifier: "showCategories", sender: self)
+        
     }
     
     override func viewDidLoad() {
@@ -44,7 +53,7 @@ class PhotoWallViewController: UIViewController, UICollectionViewDelegate, UICol
         }
         
         self.photos = [Photo]()
-        getPhotos(completionHandler: nil)
+        getPhotos(resetPhotos: true, completionHandler: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -52,11 +61,11 @@ class PhotoWallViewController: UIViewController, UICollectionViewDelegate, UICol
     }
     
     /// Get next page Photos. Auto reload collectionView.
-    private func getPhotos(completionHandler handler: (()->())?) {
+    fileprivate func getPhotos(resetPhotos: Bool, completionHandler handler: (()->())?) {
         QueryModel.getPhotos(forSearchTerm: searchTerm, page: page, resultsPerPage: pageSize, photoSizes: photoSizes) { (photos, error) in
             if(photos != nil) {
                 self.page += 1
-                self.photos.append(contentsOf: photos!)
+                resetPhotos ? self.photos = photos : self.photos.append(contentsOf: photos!)
                 self.collectionView.layoutIfNeeded()
                 self.collectionView.reloadData()
             } else {
@@ -98,7 +107,7 @@ class PhotoWallViewController: UIViewController, UICollectionViewDelegate, UICol
         }
         if offset >= sizeLength {
             self.isLoading = true
-            self.getPhotos(completionHandler: {
+            self.getPhotos(resetPhotos: false, completionHandler: {
                 self.isLoading = false
             })
         }
@@ -137,10 +146,11 @@ class PhotoWallViewController: UIViewController, UICollectionViewDelegate, UICol
             if self.photos != nil && self.selectedIndex != nil && self.selectedIndex! < self.photos!.count {
                 svc.photo = self.photos![self.selectedIndex!]
             }
+        } else if segue.identifier == "showCategories" {
+            let svc = segue.destination as! SearchTermTableViewController
+            svc.delegate = self
         }
     }
-    
-    
 }
 
 // MARK: Extension - PhotoWallLayoutDelegate
@@ -160,6 +170,19 @@ extension PhotoWallViewController: PhotoWallLayoutDelegate {
     override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
         updateCollectionViewLayout()
     }
-    
-    
 }
+
+// MARK: Extension - SearchTerm Delegate
+
+extension PhotoWallViewController: SearchTermDelegate {
+    func searchTermDidChange(sender: SearchTermTableViewController, newTerm: String) {
+        if newTerm != self.searchTerm {
+            self.searchTerm = newTerm
+            self.page = 1
+            self.getPhotos(resetPhotos: true, completionHandler: { 
+                self.collectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .top, animated: false)
+            })
+        }
+    }
+}
+

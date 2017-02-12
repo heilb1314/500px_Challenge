@@ -10,7 +10,7 @@ import Foundation
 
 
 public enum QueryPhotoError:Error {
-    case failToParseJsonObject, photoNotFound
+    case failToParseJsonObject, photoNotFound, photoSizesCannotBeEmpty
 }
 
 public enum ImageObjectError:Error {

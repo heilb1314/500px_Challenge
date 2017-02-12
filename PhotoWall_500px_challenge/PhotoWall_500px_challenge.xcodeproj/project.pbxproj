@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26665E011E50085700831F67 /* SearchTermTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26665E001E50085700831F67 /* SearchTermTableViewController.swift */; };
 		26E7D0191E42E69300AE1E2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E7D0181E42E69300AE1E2F /* AppDelegate.swift */; };
 		26E7D01E1E42E69300AE1E2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E7D01C1E42E69300AE1E2F /* Main.storyboard */; };
 		26E7D0201E42E69300AE1E2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26E7D01F1E42E69300AE1E2F /* Assets.xcassets */; };
@@ -21,8 +22,6 @@
 		26E7D0591E42E75B00AE1E2F /* PhotoThumbnailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E7D04F1E42E75B00AE1E2F /* PhotoThumbnailCollectionViewCell.swift */; };
 		26E7D05A1E42E75B00AE1E2F /* PhotoWallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E7D0501E42E75B00AE1E2F /* PhotoWallLayout.swift */; };
 		26E7D05B1E42E75B00AE1E2F /* QueryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E7D0511E42E75B00AE1E2F /* QueryModel.swift */; };
-		26E7D0651E42EDFB00AE1E2F /* PXAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E7D0641E42EDFB00AE1E2F /* PXAPI.framework */; };
-		26E7D0661E42EDFB00AE1E2F /* PXAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26E7D0641E42EDFB00AE1E2F /* PXAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		85D2571A75FD853B170232C4 /* Pods_PhotoWall_500px_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2026ADEB8AEE00F422EFDF60 /* Pods_PhotoWall_500px_challenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,23 +42,10 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		26E7D0671E42EDFC00AE1E2F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				26E7D0661E42EDFB00AE1E2F /* PXAPI.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		0F5E036535BA97DBBB7F55F5 /* Pods-PhotoWall_500px_challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoWall_500px_challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoWall_500px_challenge/Pods-PhotoWall_500px_challenge.debug.xcconfig"; sourceTree = "<group>"; };
 		2026ADEB8AEE00F422EFDF60 /* Pods_PhotoWall_500px_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoWall_500px_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26665E001E50085700831F67 /* SearchTermTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTermTableViewController.swift; sourceTree = "<group>"; };
 		26E7D0151E42E69300AE1E2F /* PhotoWall_500px_challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoWall_500px_challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E7D0181E42E69300AE1E2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26E7D01D1E42E69300AE1E2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,7 +66,6 @@
 		26E7D04F1E42E75B00AE1E2F /* PhotoThumbnailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoThumbnailCollectionViewCell.swift; sourceTree = "<group>"; };
 		26E7D0501E42E75B00AE1E2F /* PhotoWallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoWallLayout.swift; sourceTree = "<group>"; };
 		26E7D0511E42E75B00AE1E2F /* QueryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryModel.swift; sourceTree = "<group>"; };
-		26E7D0641E42EDFB00AE1E2F /* PXAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PXAPI.framework; sourceTree = "<group>"; };
 		D345BA29C94EB5E7D49D8224 /* Pods-PhotoWall_500px_challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoWall_500px_challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoWall_500px_challenge/Pods-PhotoWall_500px_challenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,7 +75,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				85D2571A75FD853B170232C4 /* Pods_PhotoWall_500px_challenge.framework in Frameworks */,
-				26E7D0651E42EDFB00AE1E2F /* PXAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +155,7 @@
 			children = (
 				26E7D04D1E42E75B00AE1E2F /* PhotoDetailViewController.swift */,
 				26E7D0461E42E6E900AE1E2F /* PhotoWallViewController.swift */,
+				26665E001E50085700831F67 /* SearchTermTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -214,7 +199,6 @@
 		26E7D0631E42E84200AE1E2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				26E7D0641E42EDFB00AE1E2F /* PXAPI.framework */,
 				2026ADEB8AEE00F422EFDF60 /* Pods_PhotoWall_500px_challenge.framework */,
 			);
 			name = Frameworks;
@@ -242,7 +226,6 @@
 				26E7D0131E42E69300AE1E2F /* Resources */,
 				75FE53459FC54338F37EB575 /* [CP] Embed Pods Frameworks */,
 				7DB758989A2747CDAE12794B /* [CP] Copy Pods Resources */,
-				26E7D0671E42EDFC00AE1E2F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -378,7 +361,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		75FE53459FC54338F37EB575 /* [CP] Embed Pods Frameworks */ = {
@@ -423,6 +406,7 @@
 				26E7D0191E42E69300AE1E2F /* AppDelegate.swift in Sources */,
 				26E7D0541E42E75B00AE1E2F /* Errors.swift in Sources */,
 				26E7D05A1E42E75B00AE1E2F /* PhotoWallLayout.swift in Sources */,
+				26665E011E50085700831F67 /* SearchTermTableViewController.swift in Sources */,
 				26E7D05B1E42E75B00AE1E2F /* QueryModel.swift in Sources */,
 				26E7D0551E42E75B00AE1E2F /* ParsingConstants.swift in Sources */,
 				26E7D0471E42E6E900AE1E2F /* PhotoWallViewController.swift in Sources */,

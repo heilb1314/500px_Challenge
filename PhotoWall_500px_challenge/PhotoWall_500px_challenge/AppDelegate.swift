@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import PXAPI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,9 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        PXRequest.setConsumerKey("V48YYid7RwaujUL5pZOJ6rAJfGDkFxbsG0g3Bw8O", consumerSecret: "RoMChuyYyg9J1Q4A67pAAH0ftNLPRvrl8YILX12P")
-        
         
         return true
     }

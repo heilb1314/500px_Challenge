@@ -11,6 +11,34 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Search Term Table View Controller-->
+        <scene sceneID="ZFw-59-cC3">
+            <objects>
+                <tableViewController id="L1h-ge-fbq" customClass="SearchTermTableViewController" customModule="PhotoWall_500px_challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="oc6-3H-Nuv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="7R2-Xg-B9S">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7R2-Xg-B9S" id="id0-kj-ZCJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="L1h-ge-fbq" id="1yy-Pd-Iod"/>
+                            <outlet property="delegate" destination="L1h-ge-fbq" id="GXb-2X-VQE"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dqc-yA-tLe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="591" y="-586"/>
+        </scene>
         <!--Popular-->
         <scene sceneID="WEe-pe-ll4">
             <objects>
@@ -71,6 +99,7 @@
                         <segue destination="vvQ-Mi-Soq" kind="show" identifier="showPhotoDetail" id="teT-1b-exQ">
                             <nil key="action"/>
                         </segue>
+                        <segue destination="L1h-ge-fbq" kind="show" identifier="showCategories" id="L8F-CZ-A3s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FBV-NI-5WB" sceneMemberID="firstResponder"/>
@@ -138,7 +167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLi-ur-Vve" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1061" y="105"/>
+            <point key="canvasLocation" x="1318" y="105"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OJL-gv-U3e">
@@ -156,7 +185,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lh0-xT-e5c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="104.7976011994003"/>
+            <point key="canvasLocation" x="-135" y="105"/>
         </scene>
     </scenes>
 </document>
