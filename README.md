@@ -1,7 +1,7 @@
 # 500px_Challenge
 500px Challenge for Mobile Developer Intern (Summer: May to Sep)
 
-I used the 500px iOS SDK for OAuth and Photo HttpRequest. I removed the JSON serialization in PXAPI for easier parsing under Swift 3.
+I use the 500px Restful API along with [Alamofire](https://github.com/Alamofire/Alamofire) for Photo Request.
 
 CollectionView scroll vertically in Portrait and horizontally in Landscape.
 Photo grid mapping using three columns as default.
